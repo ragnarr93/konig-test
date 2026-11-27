@@ -566,6 +566,48 @@ footer p { margin: 0; color: var(--muted); font-size: .85rem; }
 .contact-card a { text-underline-offset: .25em; }
 .contact-card a:hover { color: var(--brand); }
 
+.tv-product {
+  padding-block: clamp(45px, 6vw, 90px);
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.tv-product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 75px);
+}
+
+.tv-product-copy h2 { color: var(--brand); }
+.tv-product-copy .kicker { margin-bottom: 13px; }
+.tv-product-intro { max-width: 38ch; margin: 19px 0; }
+.tv-product-copy .measure { max-width: 370px; margin-bottom: 23px; }
+
+.tv-finish {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  border: 1px solid rgba(57, 45, 39, .25);
+  border-radius: 50%;
+  background: #b4664f;
+  vertical-align: -.08em;
+}
+
+.tv-product-photo { margin: 0; }
+
+.tv-product-photo img {
+  width: 100%;
+  border-radius: 5% 21% 5% 19% / 9% 18% 9% 16%;
+}
+
+.tv-product-photo figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: .84rem;
+}
+
 @media (max-width: 1050px) {
   :root { --wrap: min(100% - 64px, 1320px); }
   .hero-stroke { bottom: -39px; }
@@ -611,6 +653,8 @@ footer p { margin: 0; color: var(--muted); font-size: .85rem; }
   }
 
   .about-layout, .contact-page { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .tv-product-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .tv-product-photo { grid-row: 2; }
   .info-heading { margin-bottom: 30px; }
   .info-heading img { bottom: -25px; }
   .about-photo { max-width: 520px; }
@@ -619,6 +663,16 @@ footer p { margin: 0; color: var(--muted); font-size: .85rem; }
   .product-specs { padding-top: 0; }
   .request { padding-block: 46px; }
   footer .wrap { flex-wrap: wrap; gap: 9px; }
+}
+
+@media (max-width: 480px) {
+  .navlinks {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: start;
+    gap: 3px 10px;
+  }
 }
 
 @media (max-width: 370px) {
