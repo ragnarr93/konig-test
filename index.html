@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>König Design | PESA 65 öökapp koerapesaga</title>
+<meta name="description" content="König Designi PESA 65. Värvitud MDF-ist öökapp sahtli ja avatud koerapesaga.">
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#sisu">Liigu sisu juurde</a>
+<header><div class="wrap nav" id="algus">
+  <a class="wordmark" href="#algus" aria-label="König Design, avaleht"><img src="assets/logo.png" width="29" height="30" alt=""><span><strong>KÖNIG</strong> DESIGN</span></a>
+  <nav class="navlinks" aria-label="Põhimenüü"><a href="#toode">Öökapp</a><a href="#moodud">Mõõdud</a><a href="#huvi">Päring</a></nav>
+</div></header>
+<main id="sisu">
+  <section id="toode" class="wrap hero" aria-labelledby="pealkiri">
+    <div class="hero-copy"><p class="kicker">Öökapp koerapesaga · <span style="white-space:nowrap">PESA 65</span></p>
+      <div class="hero-heading">
+        <h1 id="pealkiri">Ka temal on<br> oma koht.</h1>
+        <img class="hero-stroke" src="assets/looklev-joon.webp" alt="" width="465" height="69">
+      </div>
+      <p>Sahtel sinu asjadele. Pehme ja avatud pesa väikesele koerale. Mõlemad mahuvad ühte öökappi.</p>
+      <a class="button" href="#moodud">Vaata mõõte ja toone</a>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/pesa-65.webp" alt="Väike koer puhkab sooja hallikaspruuni öökapi avatud pesas" width="1082" height="874" fetchpriority="high">
+      <figcaption class="photo-note">Kontseptsioonivisualiseering</figcaption>
+    </figure>
+  </section>
+  <div class="wrap spec-strip" aria-label="Toote põhiandmed">
+    <div><strong>Värvitud MDF</strong><span>Matt viimistlus kavandis</span></div>
+    <div><strong>650 × 480 × 550 mm</strong><span>Laius × sügavus × kõrgus</span></div>
+    <div><strong>Avatud pesa</strong><span>Väljavõetav madrats</span></div>
+  </div>
+  <section class="wrap details" id="moodud" aria-labelledby="detail-title">
+    <div class="details-intro">
+      <h2 id="detail-title">Kas ta mahub?</h2>
+      <p>Mõõda koera tavapärast magamisasendit ja võrdle seda madratsi mõõtudega. Vaata ka, et koer saaks avast vabalt sisse ja pesas end pöörata.</p>
+    </div>
+    <figure class="product-diagram" aria-labelledby="diagram-title">
+      <h3 id="diagram-title">Sahtel, pesa ja madrats</h3>
+      <img src="assets/pesa-65-kontuur.webp" alt="Öökapi kontuurjoonis. Sahtel on pesa kohal. Nool näitab, kuidas madratsit eest välja tõmmata." width="480" height="337" loading="lazy">
+      <figcaption>
+        <ol class="diagram-key">
+          <li><span>1</span> Sahtel</li>
+          <li><span>2</span> Avatud pesa</li>
+          <li><span>3</span> Eemaldatav madrats</li>
+        </ol>
+      </figcaption>
+    </figure>
+    <div class="product-specs">
+      <h3>Mõõdud</h3>
+      <dl class="measure">
+        <dt>Välismõõt (L × S × K)</dt><dd>650 × 480 × 550 mm</dd>
+        <dt>Pesa sisemõõt (L × S × K)</dt><dd>612 × 461 × 350 mm</dd>
+        <dt>Madrats (L × S × K)</dt><dd>600 × 440 × 50 mm</dd>
+        <dt>Vaba kõrgus madratsist</dt><dd>300 mm</dd>
+      </dl>
+      <p class="sub prototype-note">Mõõdud ja viimistlused täpsustuvad prototüübi järel.</p>
+      <h3 id="toonid">Viimistluse tooninäidised</h3>
+      <div class="finishes" role="group" aria-labelledby="toonid">
+        <button class="swatch" type="button" style="--swatch:#826650" aria-pressed="true" data-tone="Hallikaspruun"><i aria-hidden="true"></i>Hallikaspruun</button>
+        <button class="swatch" type="button" style="--swatch:#B4664F" aria-pressed="false" data-tone="Terrakota"><i aria-hidden="true"></i>Terrakota</button>
+        <button class="swatch" type="button" style="--swatch:#F7F2E9" aria-pressed="false" data-tone="Kreem"><i aria-hidden="true"></i>Kreem</button>
+      </div>
+      <p id="tone-status" class="sub" aria-live="polite">Valitud toon on hallikaspruun. Tootepildil on hallikaspruun kavand.</p>
+    </div>
+  </section>
+  <section class="request" id="huvi" aria-labelledby="huvi-title"><div class="wrap">
+    <div class="request-copy"><p class="kicker">PESA 65</p><h2 id="huvi-title">Kas see sobiks sinu koju?</h2><p>Pane kirja oma toonieelistus ja ruumi või koera mõõdud.</p></div>
+    <form id="request-form">
+      <p class="note">Kujunduse eelvaade. Vorm koostab päringu kokkuvõtte siin lehel.</p>
+      <label>Nimi<input name="nimi" required autocomplete="name" maxlength="100"></label>
+      <label>E-post<input type="email" name="email" required autocomplete="email" maxlength="160"></label>
+      <label>Mõõdud või küsimus<textarea name="küsimus" maxlength="600" placeholder="Näiteks vaba ruum voodi kõrval"></textarea></label>
+      <button class="button" type="submit">Vaata päringu eelvaadet</button>
+      <output class="result" id="summary" aria-live="polite" hidden></output>
+    </form>
+  </div></section>
+  <section class="wrap faq"><h2>Korduma kippuvad küsimused</h2>
+    <div>
+      <details><summary>Mis kuulub komplekti?</summary><p>Kavandatud komplektis on ühe sahtliga kapp ja väljavõetav madrats. Madratsile on kavandatud eemaldatav kate.</p></details>
+      <details><summary>Kas pesa on eest avatud?</summary><p>Jah. Koer saab ise pesasse minna ja sealt välja tulla.</p></details>
+      <details><summary>Millal saan tellida?</summary><p>Tellimise aeg, hind ja tarneviis selguvad pärast prototüübi valmimist.</p></details>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><a class="wordmark" href="#algus"><img src="assets/logo.png" width="29" height="30" alt=""><span><strong>KÖNIG</strong> DESIGN</span></a><p>Rakvere · Kodulehe kujunduse eelvaade</p></div></footer>
+</body>
+</html>
